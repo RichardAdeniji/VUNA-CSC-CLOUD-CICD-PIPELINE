@@ -1,8 +1,16 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - npm install
   build:
     commands:
-      - npm i --save
+      - echo Building the application...
+      - npm run build
+
 artifacts:
   files:
-    - "**/*"
+    - '**/*'
+  discard-paths: yes
