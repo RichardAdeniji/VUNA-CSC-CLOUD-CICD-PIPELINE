@@ -11,9 +11,3 @@ phases:
   post_build:
     commands:
       - echo "Build completed on `date`"
-
-# Artifacts are optional and only needed if you want to upload build artifacts
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
