@@ -1,21 +1,8 @@
+
 version: 0.2
-
 phases:
-  install:
-    commands:
-      - echo Installing dependencies...
-      - npm install
-  build:
-    commands:
-      - echo Building the application...
-      - npm run build
-      - echo Listing contents of current directory...
-      - ls -R
-      - echo Listing contents of dist directory...
-      - ls -R dist
-
+ build:
+ commands:
+ - npm i --save
 artifacts:
-  files:
-    - '**/*'
-  base-directory: 'dist'
-  discard-paths: yes
+ files: "* / *"
