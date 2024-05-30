@@ -9,8 +9,13 @@ phases:
     commands:
       - echo Building the application...
       - npm run build
+      - echo Listing contents of current directory...
+      - ls -R
+      - echo Listing contents of dist directory...
+      - ls -R dist
 
 artifacts:
   files:
-    - "**/*"
+    - '**/*'
+  base-directory: 'dist'
   discard-paths: yes
