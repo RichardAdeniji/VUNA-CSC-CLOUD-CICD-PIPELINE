@@ -1,8 +1,7 @@
-
 version: 0.2
 phases:
- build:
- commands:
- - npm i --save
+  build:
+    commands:
+      - npm install --save
 artifacts:
- files: "* / *"
+  files: "*/*"
